@@ -1,0 +1,99 @@
+body {
+  background-color: #0079ef;
+  position: relative;
+  height: 100vh;
+}
+button.x {
+  background-color: #fff;
+  color: #0079ef;
+  border: 1px solid #3c18ff;
+  padding: 13px 19px;
+  text-transform: capitalize;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.startinggame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.rules {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 582px;
+  margin-left: -270px;
+  background: #fff;
+  padding: 23px 15px;
+  margin-top: -165px;
+  display: none;
+}
+.rules .title {
+  color: #000;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ddd;
+}
+.rules ol {
+  padding: 3px 23px;
+}
+.rules ol li {
+  padding: 10px 12px;
+}
+.rules .buttons {
+  float: right;
+}
+.quiz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 582px;
+  margin-left: -270px;
+  background: #fff;
+  padding: 23px 15px;
+  margin-top: -165px;
+  display: none;
+}
+.quiz .body h5 {
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.quiz .body p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 10px 10px;
+  background-color: #edf7fe;
+  text-transform: capitalize;
+  border: 1px solid #5a5aff;
+  cursor: pointer;
+}
+.quiz span {
+  float: left;
+}
+.quiz button {
+  float: right;
+  display: none;
+}
+.quiz .body p.wrong {
+  border: 2px solid #f00;
+}
+.quiz .body p.right {
+  border: 2px solid green;
+}
+.quiz .body p.wrong::after {
+  content: "wrong";
+  float: right;
+  color: red;
+}
+.quiz .body p.right::after {
+  content: "right";
+  float: right;
+  color: green;
+}
+
+.answers.pointers {
+  pointer-events: none;
+}
